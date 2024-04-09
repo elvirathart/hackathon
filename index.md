@@ -16,7 +16,6 @@ containers containers containers
 
 ## Wat gaan we doen?
 Lxd container opzetten.
-<br />
 
 <br /><br />
 
