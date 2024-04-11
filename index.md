@@ -15,7 +15,12 @@ containers containers containers
 <br />
 
 ## Wat gaan we doen?
-Lxd container opzetten.
+Spelen met test containers!
+
+<br /> <br />
+
+
+##Lxd container opzetten.
 
 <br />
 
