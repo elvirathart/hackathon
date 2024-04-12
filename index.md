@@ -18,7 +18,9 @@ containers containers containers
 Spelen met containers en databases!
 <br /><br />
 
-Eerst gaan we containers maken, met behulp van onderstaande handleiding, google en ChatGPT.
+Eerst gaan we containers maken, daarna kunnen we hierin databases zetten.
+<br />
+Hieronder een handleiding om je op weg te helpen. Maak gebruik van google en ChatGPT!
 <br />
 
 <br /> <br />
