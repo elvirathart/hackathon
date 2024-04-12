@@ -25,7 +25,6 @@ Eerst gaan we containers maken, met behulp van onderstaande handleiding, google 
 
 
 ## Lxd container opzetten
-
 <br />
 
 __snap install lxd__
@@ -62,6 +61,7 @@ Bekijk de help pagina voor meer commando's.
 <br />
 
 ## Database installeren
+<br />
 
 __Vraag ChatGpt: How to install MariaDB on Ubuntu__
 <br />
