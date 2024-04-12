@@ -20,14 +20,7 @@ Spelen met containers en databases!
 
 Eerst gaan we containers maken, met behulp van onderstaande handleiding, google en ChatGPT.
 <br />
-<!-- 
-Er zijn verschillende opties qua containers en databases.
-<br />
 
-Nadat we een werkende container met database hebben: 
-<br />
-Verkennen van 'test isolation'. Verzin een test die zo omgaat met de data dat het een eigen omgeving / database nodig heeft.
--->
 <br /> <br />
 
 
