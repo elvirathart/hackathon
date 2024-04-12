@@ -31,7 +31,7 @@ Verkennen van 'test isolation'. Verzin een test die zo omgaat met de data dat he
 <br /> <br />
 
 
-## Lxd container opzetten.
+## Lxd container opzetten
 
 <br />
 
@@ -67,6 +67,8 @@ __lxc --help__
 Bekijk de help pagina voor meer commando's.
 <br />
 <br />
+
+## Database installeren
 
 __Vraag ChatGpt: How to install MariaDB on Ubuntu__
 <br />
