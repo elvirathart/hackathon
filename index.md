@@ -15,6 +15,7 @@ output:
 ## Wat gaan we doen?
 <br />
 __Spelen met containers en databases!__
+<br />
 De opzet van deze hackathon is dit keer iets anders. Het is misschien iets minder hackathon, iets meer workshop. We leveren wat meer handleiding en tips erbij omdat misschien niet iedereen bekend is met het gebruik van containers en databases. Het is eigen keuze in hoeverre je dit wilt volgen.<br />
 De bedoeling is om kennis te maken met dit onderwerp, comfortabel worden in het gebruik en weten wat de voor en nadelen zijn – dit door er mee te spelen en uiteindelijk een werkend voorbeeld inclusief tests te bouwen.<br />
 <br />
@@ -25,6 +26,7 @@ Hieronder de handleiding om je op weg te helpen. Gebruik Google en ChatGPT als j
 ## Basis begrippen
 <br />
 __Docker__
+<br />
 Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.<br />
 Docker piggybacks off of features in the Linux kernel to perform its magic. Because of this reliance on the Linux kernel, it's important to note that Docker only runs on Linux.<br />
 <br />
@@ -55,6 +57,8 @@ PostgreSQL, often simply "Postgres", is an object-relational database management
 ## Docker container en Postgres database
 <br />
 <span style="color:red;>Het betere volk kan deze stap overslaan:</span><br />
+__Installeer Docker Desktop__
+<br />
 
 
 
