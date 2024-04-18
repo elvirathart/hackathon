@@ -9,97 +9,54 @@ output:
 
 <br />
 
-# Hackathon
-containers containers containers
+# Hackathon - 25 april
 
 <br />
-
 ## Wat gaan we doen?
-Spelen met containers en databases!
-<br /><br />
-
-Eerst gaan we containers maken, daarna kunnen we hierin databases zetten.
 <br />
-Hieronder een handleiding om je op weg te helpen. Maak gebruik van google en ChatGPT!
+__Spelen met containers en databases!__
+De opzet van deze hackathon is dit keer iets anders. Het is misschien iets minder hackathon, iets meer workshop. We leveren wat meer handleiding en tips erbij omdat misschien niet iedereen bekend is met het gebruik van containers en databases. Het is eigen keuze in hoeverre je dit wilt volgen.<br />
+De bedoeling is om kennis te maken met dit onderwerp, comfortabel worden in het gebruik en weten wat de voor en nadelen zijn – dit door er mee te spelen en uiteindelijk een werkend voorbeeld inclusief tests te bouwen.<br />
 <br />
-
-<br /> <br />
-
-
-## Lxd container opzetten
-<br />
-
-__snap install lxd__
-<br /><br />
-__lxd init__
-<br />
-Alle vragen op default.
-<br /><br />
-__lxd --version__
-<br />
-Versie 5.20?
-<br /><br />
-__lxc launch ubuntu:22.04 [naam container]__
-<br />
-Maak een container aan met bijvoorbeeld Ubuntu 22.04 en geef de container een naam.
-<br /><br />
-__lxc exec [naam container] --sudo --user ubuntu --login__
-<br />
-Om in te loggen op een container.
-Nu zit je in de container en heb je een volledige Ubuntu omgeving!
-<br /><br />
-__exit__
-<br />
-Om weer uit de container te gaan.
-<br /><br />
-__lxc list__
-<br />
-Bekijk de status van je container(s).
-<br /><br />
-__lxc --help__
-<br />
-Bekijk de help pagina voor meer commando's.
+Hieronder de handleiding om je op weg te helpen. Gebruik Google en ChatGPT als je er niet uitkomt.
 <br />
 <br />
 
-## Database installeren
+## Basis begrippen
+<br />
+__Docker__
+Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.<br />
+Docker piggybacks off of features in the Linux kernel to perform its magic. Because of this reliance on the Linux kernel, it's important to note that Docker only runs on Linux.<br />
+<br />
+__Docker Desktop__
+<br />
+Having a virtual machine is required on Windows and MacOS if you want to run Linux containers. Basically Docker Desktop is a virtual machine + Graphical user interface with some extra features like the new extensions and running a single-node Kubernetes “cluster” easily. Inside the virtual machine there is Docker CE (Docker Community Edition) daemon.<br />
+Keep it in mind when you try to access container IP addresses directly, because the Docker network exists only inside the virtual machine, not on your host. This is also true for local volumes too. The other very important difference is related to the network is that even if you use the host network mode (docker run --net host) it will be the host network of the virtual machine, not your actual physical host.<br />
+<br />
+__Dockerfile__
+<br />
+A file (with simple) syntax for defining the steps needed to create an image and run it.<br />
+<br />
+__Image__
+<br />
+Read-only template with instructions for creating a Docker container.<br />
+Often, an image is based on another image, with some additional customization. You might create your own image or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile.<br />
+<br />
+__Container__
+<br />
+A container is a runnable instance of an image. You can create, start, stop, move or delete a container using the Docker API or cli. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.<br />
+<br />
+__PostgreSQL__
+<br />
+PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices, and retrieve it later, as requested by other software applications, be it those on the same computer or those running on another computer across a network (including the Internet). It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability.<br />
+<br />
 <br />
 
-__Vraag ChatGpt: How to install MariaDB on Ubuntu__
+## Docker container en Postgres database
 <br />
-Als het goed is ga je dan ook iets van mysql-secure-installation draaien
-<br />
-<br />
-__Verwijder test users etc.__
-<br /><br />
-__Maak een database aan__
-<br /><br />
-__Maak een nieuwe user aan__
-<br /><br />
-__Geef de nieuwe user alle (of enkele) permissies op de aangemaakte database__
-<br /><br />
-__Create een table__
-<br /><br />
-__Insert data in de table__
-<br /><br />
-__Select data uit de table__
-<br />
-Ook met where clause
-<br /><br />
-__Delete een row__
-<br />
-Ook met where clause
-<br /><br />
-__Maak nog een table aan en zorg dat 1 kolom een verwijzing heeft naar de eerste table__
-<br />
-Bijvoorbeeld een ID in table 1 heeft een kolom met dezelfde waarde in table 2.
-<br /><br />
-__Doe nu een query__
-<br />
-m.b.v. een join (inner, left, right), zodat je data uit beide tabellen selecteert.
-Dit kun je voor nog veel meer tabellen doen!
-<br />
-<br />
+<span style="color:red;>Het betere volk kan deze stap overslaan:</span><br />
+
+
 
 
 <!-- 
