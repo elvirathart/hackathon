@@ -165,10 +165,10 @@ Hopelijk hebben we nog steeds een database met 12 pokémons en 3 kolommen. Deze 
 <br />
 <br />
 
-# TEST TEST TEST
+## TEST TEST TEST
 
 <br />
-Vals spelen: van elke test kun je een voorbeeld vinden in de volgende repo: * link *<br />
+__Vals spelen: van elke test kun je een voorbeeld vinden in de volgende repo:  link__ <br />
 <br />
 
 ## TEST 1 - database.test.ts
