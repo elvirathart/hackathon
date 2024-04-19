@@ -83,7 +83,8 @@ __docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASWORD=pass123
 <br />
 <br />
 <span style="color:blue;">
-Uitleg command:<br />
+__Uitleg command:__
+<br />
 “-d” flag specifies that the container should execute in the background.<br />
 “--name” option assigns the container’s name, i.e., “postgresCont”.<br />
 “-p” assigns the port for the container i.e. “5432:5432”.<br />
