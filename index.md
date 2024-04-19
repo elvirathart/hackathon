@@ -81,9 +81,165 @@ In Docker Desktop, in de sidebar links: klik Images. Hier zie je de postgres ima
 <br />
 __docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASWORD=pass123 postgres__
 <br />
-
-
-
+<br />
+<span style="color:blue;">
+Uitleg command:
+- “-d” flag specifies that the container should execute in the background.
+- “--name” option assigns the container’s name, i.e., “postgresCont”.
+- “-p” assigns the port for the container i.e. “5432:5432”.
+- “-e POSTGRES_PASSWORD” configures the password to be “pass123”.
+- “postgres” is the official Docker image.
+</span>
+<br />
+<br />
+We hebben nu een postgres instance gestart met een container genaamd pokemonContainer.<br />
+In Docker Desktop, in sidebar klik Containers. Hier zie je de net aangemaakte container genaamd pokemonContainer in de lijst en of deze wel of niet runt. Zo nodig kun je containers hier ook starten en stoppen. Dit kan ook allemaal in cli, probeer uit:<br />
+<br />
+__docker ps__
+<br />
+Controleer dat de net aangemaakte container runt.<br />
+__docker stop pokemonContainer__<br />
+__docker start pokemonContainer__<br/>
+<br />
+__docker exec -it pokemonContainer bash__
+<br />
+-it opent de bash shell in de postgres container (eigenlijk opent bash een bash shell en -ti zorgt voor een interactieve tty). Als het goed is zie je nu iets als:<br />
+root@*****:/#<br />
+We hebben toegang tot de pokemonContainer en kunnen er nu commands in runnen.<br />
+Verschil run en exec: bij run maak je een container en start deze, exec gaat uit van een al gestarte container.<br />
+<br />
+__psql -h localhost -U postgres__
+<br />
+Als het goed is zie je nu:<br />
+postgres=#<br />
+Nu zitten we in de SQL Shell, waar we SQL queries en psql commands kunnen uitvoeren.<br />
+<br />
+__CREATE DATABASE pokemon;__
+<br />
+Creëer een database genaamd pokemon_types, als het goed gaat krijg je als feedback CREATE DATABASE.<br />
+<br />
+__\l__ (=Kleine L) <br />
+<br />
+Bevestig dat de database bestaat / bekijk alle aangemaakte databases.<br />
+<br />
+__\c pokemon;__
+<br />
+Maak connectie met de database. Let op dat je bevestiging krijgt dat je connectie hebt met de database.<br />
+__CREATE TABLE pokemon_types(ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, TYPE TEXT NOT NULL);__
+<br />
+Maakt een tabel aan met de gewenste kolommen.<br />
+<br />
+__INSERT INTO pokemon_types VALUES (0001, ‘bulbasaur’, ‘poison’);__
+<br />
+Insert records in de nieuwe tabel.<br />
+<br />
+__SELECT * FROM pokemon_types;__
+<br />
+Zo kun je de data in de tabel terug zien.<br />
+<br />
+__Voeg nu de volgende rijen toe aan de tabel:__
+<br />
+Dit kan natuurlijk een voor een met het INSERT INTO command… maar hopelijk ga je wat efficiënter te werk dan dat.<br />
+<br />
+(4, ‘charmander’, ‘fire’),<br />
+(16, ‘pidgey’, ‘flying’),<br />
+(25, ‘pikachu’, ‘normal’),<br />
+(79, ‘slowpoke’, ‘psychic’),<br />
+(94, ‘gengar’, ‘poison’),<br />
+(97, ‘hypno’, ‘psychic’),<br />
+(100, ‘voltorb’, ‘electric’),<br />
+(118, ‘goldeen’, ‘water’),<br />
+(157, ‘typhlosion’, ‘fire’),<br />
+(163, ‘hoothoot’, ‘flying’),<br />
+(7, ‘squirtle’, ‘water’)<br />
+<br />
+Geen ervaring met sql? Dan nog wat meer basis:<br />
+Pikachu is natuurlijk geen normal type. Update het type van Pikachu ajb met electric.<br />
+<br />
+Er zijn uiteraard veel andere acties die je kan toepassen op een database.<br />
+Speel even, bijvoorbeeld: voeg een extra kolom toe, hernoem de kolom en haal de kolom er bv. weer van af.<br />
+<br />
+__Klaar met spelen?__
+<br />
+Hopelijk hebben we nog steeds een database met 12 pokémons en 3 kolommen. Deze hebben we zo nodig voor onze eerste test.<br />
+<br />
+<br />
+## TEST TEST TEST
+<br />
+<br />
+Vals spelen: van elke test kun je een voorbeeld vinden in de volgende repo: * link *<br />
+<br />
+__TEST 1 - database.test.ts__
+<br />
+Gebruik Typescript en Jest.<br />
+Schrijf een test die een extra pokémon (2, ‘morpeko’, ‘electric’) toevoegt aan de database en assert dat er nu 13 pokémons in de database staan.<br />
+<br />
+Vergeet niet (ook handig wanneer je ChatGPT vraagt ;) ):<br />
+Jest Typescript unit test<br />
+connects to postgres localhost 5432<br />
+user postgres<br />
+inserts a string/record into table <table name><br />
+assert the count is 13<br />
+<br />
+__npm test -- database.test.ts__
+<br />
+Draai de test 1x.<br />
+<br />
+Ga naar je terminal, daar waar je in de container zit en contact hebt met de database pokemon.<br />
+__SELECT * FROM pokemon_types;__
+<br />
+Valt iets op?<br />
+<br />
+__npm test -- database.test.ts__
+<br />
+Draai de test een tweede keer. <br />
+Breng database eventueel in originele staat door wat je hebt toegevoegd in je test via de cli te deleten.<br />
+<br />
+De test maakt elke keer gebruik van dezelfde database. Hierdoor is de test onbetrouwbaar of faalt altijd na de eerste run.<br />
+<br />
+Wij willen:<br />
+<br />
+<span style="color:blue;">
+Test isolation.
+Net als bij web automation wil je een schone browser context bij elke test zodat dat wat je test, de applicatie of het component ook consistent gedraagt. Dit geldt in het algemeen natuurlijk: alle tests zouden altijd onafhankelijk van elkaar gedraaid moeten worden en dus betrouwbaar slagen.</span><br />
+<br />
+__TEST 2 - container.test.ts__
+<br />
+In deze test gaan we test isolation toepassen. Hoe? Door gebruik van containers.<br />
+<br />
+Zet in 1 testfile 5 dezelfde tests. Zorg dat voor elke test een nieuwe container wordt aangemaakt waar je de tabel pokemon_types in creëert en voeg vervolgens pokemon (2, ‘morpeko’, ‘electric’) toe aan de tabel.<br />
+Je kan een assert toevoegen, maar we weten eigenlijk al of de testisolation geslaagd is als we bij de tweede ‘test’, na toevoegen van de pokémon, geen melding krijgen van duplicate key.<br />
+<br />
+Om iets van feedback te krijgen en zien wat er gebeurt tijdens het draaien van de tests is aan te raden om mee te kijken in je terminal (op mac misschien installeren met brew):<br />
+__watch docker ps__
+<br />
+<br />
+__TEST 3 - preseed.test.ts__
+<br />
+In Test 1 maakten we gebruik van de instance met een database waar we een tabel in gemaakt hadden die we gevuld hadden met 12 Pokémon.<br />
+<br />
+In Test 2 hebben we voor elke test een nieuwe instance van de image postgres gemaakt, met database pokemon en een tabel pokemon_types. De tabel begint leeg, pas in de test zelf vullen we deze met 1 Pokémon.<br />
+<br />
+Voor deze test 3 willen we eerst een instance aanmaken die we gelijk vullen met de database pokemon waarin de tabel pokemon_types staat met de 12 pokémon. Zodat we dit niet in de forEach of in de test zelf hoeven doen.<br />
+<br />
+Maak een sql bestand met de commands om een database en tabel aan te maken en gelijk te vullen met de values (de 12 pokémon die we eerder ook gebruikt hebben).<br />
+<br />
+Maak een dockerfile die een postgres image pakt en het sql script kopieert naar /docker-entrypoint-initdb.d/<br />
+Dit is deel van de postgres base image entrypoint script dat je image erft van de base image.<br />
+(postgres image is ingesteld om alles in de map uit te voeren)<br />
+<br />
+cd naar de map waar je de bestanden hebt staan<br />
+__docker build -t preseeded:latest .__
+<br />
+Als de build goed ging heb je nu een image aangemaakt genaamd preseeded:latest. Als je wilt kun je nog controleren of je image in de lijst staat:<br />
+__docker images__
+<br />
+<br />
+Maak een testfile aan genaamd preseed.test.ts. Maak contact met de preseeded image en schrijf 3 tests waarin je bevestigt dat ‘slowpoke’, ‘gengar’ en ‘typhlosion’ al in de database staan.<br />
+<br />
+<br />
+<br />
+<br />
 
 <!-- 
 ***Languages***
