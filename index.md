@@ -56,7 +56,7 @@ PostgreSQL, often simply "Postgres", is an object-relational database management
 
 ## Docker container en Postgres database
 <br />
-<span style="color:red";>Het betere volk kan deze stap overslaan:</span><br />
+<span style="color:red;">Het betere volk kan deze stap overslaan:</span><br />
 __Installeer Docker Desktop__
 <br />
 
