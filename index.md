@@ -59,6 +59,30 @@ PostgreSQL, often simply "Postgres", is an object-relational database management
 <span style="color:red;">Het betere volk kan deze stap overslaan:</span><br />
 __Installeer Docker Desktop__
 <br />
+### Installeer Docker Desktop
+<br />
+https://www.docker.com/products/docker-desktop/
+<br />
+__Open je terminal en Docker Desktop__
+<br />
+<br />
+__docker --version__
+<br />
+Als je geen docker versie terugkrijgt, moet je waarschijnlijk de docker daemon starten. Zoek in de applicatie folder in Finder.<br />
+<br />
+__brew install postgresql@15__
+<br />
+Installeer PostgreSQL, bv met Homebrew.<br />
+<br />
+<span style="color:red;">Vanaf hier voor Linux en Mac:</span><br />
+__docker pull postgres__
+<br />
+Download de laatste versie van Postgres image.<br />
+<br />
+In Docker Desktop, in de sidebar links: klik Images. Hier zie je de postgres image in de lijst verschijnen.<br />
+<br />
+__docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASWORD=pass123 postgres__
+<br />
 
 
 
