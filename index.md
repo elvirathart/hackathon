@@ -83,12 +83,12 @@ __docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASWORD=pass123
 <br />
 <br />
 <span style="color:blue;">
-Uitleg command:
-- “-d” flag specifies that the container should execute in the background.
-- “--name” option assigns the container’s name, i.e., “postgresCont”.
-- “-p” assigns the port for the container i.e. “5432:5432”.
-- “-e POSTGRES_PASSWORD” configures the password to be “pass123”.
-- “postgres” is the official Docker image.
+Uitleg command:<br />
+“-d” flag specifies that the container should execute in the background.<br />
+“--name” option assigns the container’s name, i.e., “postgresCont”.<br />
+“-p” assigns the port for the container i.e. “5432:5432”.<br />
+“-e POSTGRES_PASSWORD” configures the password to be “pass123”.<br />
+“postgres” is the official Docker image.<br />
 </span>
 <br />
 <br />
@@ -164,12 +164,15 @@ __Klaar met spelen?__
 Hopelijk hebben we nog steeds een database met 12 pokémons en 3 kolommen. Deze hebben we zo nodig voor onze eerste test.<br />
 <br />
 <br />
-## TEST TEST TEST
-<br />
+
+# TEST TEST TEST
+
 <br />
 Vals spelen: van elke test kun je een voorbeeld vinden in de volgende repo: * link *<br />
 <br />
-__TEST 1 - database.test.ts__
+
+## TEST 1 - database.test.ts
+
 <br />
 Gebruik Typescript en Jest.<br />
 Schrijf een test die een extra pokémon (2, ‘morpeko’, ‘electric’) toevoegt aan de database en assert dat er nu 13 pokémons in de database staan.<br />
@@ -200,10 +203,12 @@ De test maakt elke keer gebruik van dezelfde database. Hierdoor is de test onbet
 Wij willen:<br />
 <br />
 <span style="color:blue;">
-Test isolation.
+__Test isolation.__<br />
 Net als bij web automation wil je een schone browser context bij elke test zodat dat wat je test, de applicatie of het component ook consistent gedraagt. Dit geldt in het algemeen natuurlijk: alle tests zouden altijd onafhankelijk van elkaar gedraaid moeten worden en dus betrouwbaar slagen.</span><br />
 <br />
-__TEST 2 - container.test.ts__
+
+## TEST 2 - container.test.ts
+
 <br />
 In deze test gaan we test isolation toepassen. Hoe? Door gebruik van containers.<br />
 <br />
@@ -214,7 +219,8 @@ Om iets van feedback te krijgen en zien wat er gebeurt tijdens het draaien van d
 __watch docker ps__
 <br />
 <br />
-__TEST 3 - preseed.test.ts__
+
+## TEST 3 - preseed.test.ts
 <br />
 In Test 1 maakten we gebruik van de instance met een database waar we een tabel in gemaakt hadden die we gevuld hadden met 12 Pokémon.<br />
 <br />
