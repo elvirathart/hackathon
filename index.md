@@ -59,8 +59,7 @@ PostgreSQL, often simply "Postgres", is an object-relational database management
 <span style="color:red;">Het betere volk kan deze stap overslaan:</span><br />
 __Installeer Docker Desktop__
 <br />
-<br />
-https://www.docker.com/products/docker-desktop/
+[Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
 <br />
 <br />
 __Open je terminal en Docker Desktop__
