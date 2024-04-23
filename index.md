@@ -142,17 +142,17 @@ __Voeg nu de volgende rijen toe aan de tabel:__
 <br />
 Dit kan natuurlijk een voor een met het INSERT INTO command… maar hopelijk ga je wat efficiënter te werk dan dat.<br />
 <br />
-(4, ‘charmander’, ‘fire’),<br />
-(16, ‘pidgey’, ‘flying’),<br />
-(25, ‘pikachu’, ‘normal’),<br />
-(79, ‘slowpoke’, ‘psychic’),<br />
-(94, ‘gengar’, ‘poison’),<br />
-(97, ‘hypno’, ‘psychic’),<br />
-(100, ‘voltorb’, ‘electric’),<br />
-(118, ‘goldeen’, ‘water’),<br />
-(157, ‘typhlosion’, ‘fire’),<br />
-(163, ‘hoothoot’, ‘flying’),<br />
-(7, ‘squirtle’, ‘water’)<br />
+4, charmander, fire<br />
+16, pidgey, flying<br />
+25, pikachu, normal<br />
+79, slowpoke, psychic<br />
+94, gengar, poison<br />
+97, hypno, psychic<br />
+100, voltorb, electric<br />
+118, goldeen, water<br />
+157, typhlosion, fire<br />
+163, hoothoot, flying<br />
+7, squirtle, water<br />
 <br />
 Geen ervaring met sql? Dan nog wat meer basis:<br />
 Pikachu is natuurlijk geen normal type. Update het type van Pikachu ajb met electric.<br />
@@ -169,7 +169,7 @@ Hopelijk hebben we nog steeds een database met 12 pokémons en 3 kolommen. Deze 
 ## TEST TEST TEST
 
 <br />
-__Vals spelen: van elke test kun je een voorbeeld vinden in de volgende repo:  link__ <br />
+__Vals spelen: van elke test is er een voorbeeld__ <br />
 <br />
 
 ## TEST 1 - database.test.ts
@@ -245,6 +245,9 @@ __docker images__
 Maak een testfile aan genaamd preseed.test.ts. Maak contact met de preseeded image en schrijf 3 tests waarin je bevestigt dat ‘slowpoke’, ‘gengar’ en ‘typhlosion’ al in de database staan.<br />
 <br />
 <br />
+
+## OPEN OPDRACHT - bouw een frondendje bij de databaseje
+Maak een nodejs webserver 
 <br />
 <br />
 
