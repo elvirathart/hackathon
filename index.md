@@ -222,6 +222,7 @@ __watch docker ps__
 <br />
 
 ## TEST 3 - preseed.test.ts
+
 <br />
 In Test 1 maakten we gebruik van de instance met een database waar we een tabel in gemaakt hadden die we gevuld hadden met 12 Pokémon.<br />
 <br />
@@ -246,8 +247,13 @@ Maak een testfile aan genaamd preseed.test.ts. Maak contact met de preseeded ima
 <br />
 <br />
 
-## OPEN OPDRACHT - bouw een frondendje bij de databaseje
-Maak een nodejs webserver 
+## OPEN OPDRACHT - Bouw een frondendje bij je databaseje
+
+<br />
+Maak een nodejs webserver waar pokemon list bv antwoord geeft op select*from pokemon_types. Stop dat antwoord in een html body, maak er mooi lijstje van. <br />
+Voer andere acties uit als stop DB, start een andere, refresh, gebruik andere data. Probeer preseeded.
+<br />
+<br />
 <br />
 <br />
 
