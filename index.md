@@ -251,7 +251,7 @@ Maak een testfile aan genaamd preseed.test.ts. Maak contact met de preseeded ima
 
 <br />
 Maak een nodejs webserver waar pokemon list bv antwoord geeft op select*from pokemon_types. Stop dat antwoord in een html body, maak er mooi lijstje van. <br />
-Voer andere acties uit als stop DB, start een andere, refresh, gebruik andere data. Probeer preseeded.
+Voer andere acties uit als stop DB, start een andere, refresh, gebruik andere data.
 <br />
 <br />
 <br />
