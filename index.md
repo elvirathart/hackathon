@@ -69,7 +69,7 @@ __Installeer Docker Desktop__
 __Open je terminal en Docker Desktop__
 <br />
 <br />
-__docker --version__
+__docker \-\-version__
 <br />
 Als je geen docker versie terugkrijgt, moet je waarschijnlijk de docker daemon starten. Zoek in de applicatie folder in Finder.<br />
 <br />
@@ -86,7 +86,7 @@ __docker run -d \-\-name pokemonContainer -p 5432:5432 -e POSTGRES_PASSWORD=pass
 __Uitleg command:__
 <br />
 “-d” flag specifies that the container should execute in the background.<br />
-“--name” option assigns the container’s name, i.e., “postgresCont”.<br />
+“\-\-name” option assigns the container’s name, i.e., “postgresCont”.<br />
 “-p” assigns the port for the container i.e. “5432:5432”.<br />
 “-e POSTGRES_PASSWORD” configures the password to be “pass123”.<br />
 “postgres” is the official Docker image.<br />
@@ -126,6 +126,7 @@ Bevestig dat de database bestaat / bekijk alle aangemaakte databases.<br />
 __\c pokemon;__
 <br />
 Maak connectie met de database. Let op dat je bevestiging krijgt dat je connectie hebt met de database.<br />
+Maakt een tabel aan met de gewenste kolommen.<br />
 __CREATE TABLE pokemon_types(ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, TYPE TEXT NOT NULL);__
 <br />
 Normaal zou je AUTO_INCREMENT gebruiken, zodat wanneer je een insert doet het ID automatisch wordt opgehoogd, zodat je geen ID hoeft mee te geven. Het nummer van de pokemon zou je dan apart mee moeten geven: <br />
@@ -134,8 +135,8 @@ __CREATE TABLE pokemon_types(ID SERIAL PRIMARY KEY, NAME TEXT NOT NULL, TYPE TEX
 INSERT INTO pokemon_types VALUES ('bulbasaur', 'poison');
 <br />
 <br />
-Maakt een tabel aan met de gewenste kolommen.<br />
 Controleer of de tables bestaat met: <br />
+__\d \t__
 display ( \d ) <br />
 tables ( \t ) <br />
 <br />
