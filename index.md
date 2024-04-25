@@ -267,38 +267,3 @@ Voer andere acties uit als stop DB, start een andere, refresh, gebruik andere da
 <br />
 <br />
 <br />
-
-<!-- 
-***Languages***
-
-<br />
-
-## Work Experience
-
-
-
-`may 2022 - jul 2022`
-__Keana__
-
-### Test Automation Engineer
-
-Supported team of Keana, development of web based TMS by creating an end-to-end automation test using Playwright. 
-
-- Define test cases and flow 
-- Determine coverage 
-- BDD using testing-library 
-- Accessibility testing 
-- Suggest test-ability improvements to developers 
-- Tool selection: proposed to use Playwright over Cypress. <br />As POC executed part of the test in both Playwright and Cypress to show the advantages in this project 
-<br /><br />
-
-## Education
-
-__Bachelor of Design, Fashion__
-`2008 - 2011`
-
-### Rietveld Academie, Amsterdam
-
-
-
- -->
