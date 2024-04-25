@@ -117,7 +117,7 @@ Nu zitten we in de SQL Shell, waar we SQL queries en psql commands kunnen uitvoe
 <br />
 __CREATE DATABASE pokemon;__
 <br />
-Creëer een database genaamd pokemon_types, als het goed gaat krijg je als feedback CREATE DATABASE.<br />
+Creëer een database genaamd pokemon, als het goed gaat krijg je als feedback CREATE DATABASE.<br />
 <br />
 __\l__ (=Kleine L) <br />
 <br />
@@ -137,6 +137,7 @@ INSERT INTO pokemon_types VALUES ('bulbasaur', 'poison');
 <br />
 Controleer of de tables bestaat met: <br />
 __\d \t__
+<br />
 display ( \d ) <br />
 tables ( \t ) <br />
 <br />
