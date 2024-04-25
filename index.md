@@ -23,6 +23,8 @@ Hieronder de handleiding om je op weg te helpen. Gebruik Google en ChatGPT als j
 <br /> 
 Dit is bedoeld om richting te geven, het kan zijn dat commands niet volledig kloppen. Zelf blijven nadenken dus.
 <br />
+Feedback is welkom.
+<br />
 <br />
 
 ## Basis begrippen
@@ -77,10 +79,7 @@ __docker pull postgres__
 Download de laatste versie van Postgres image.<br />
 In Docker Desktop, in de sidebar links: klik Images. Hier zie je de postgres image in de lijst verschijnen.<br />
 <br />
-__docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASSWORD=pass123 postgres__
-<br />
-\-\-name
-Let op: voor name staat niet 1 - maar 2. Mocht je dit command letterlijk copy pasten verander dit dan
+__docker run -d \-\-name pokemonContainer -p 5432:5432 -e POSTGRES_PASSWORD=pass123 postgres__
 <br />
 <br />
 <span style="color:blue;">– 
