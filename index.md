@@ -255,7 +255,6 @@ Voer andere acties uit als stop DB, start een andere, refresh, gebruik andere da
 <br />
 <br />
 <br />
-<br />
 
 <!-- 
 ***Languages***
