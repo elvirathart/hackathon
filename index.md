@@ -20,6 +20,8 @@ De opzet van deze hackathon is dit keer iets anders. Het is misschien iets minde
 De bedoeling is om kennis te maken met dit onderwerp, comfortabel worden in het gebruik en weten wat de voor en nadelen zijn – dit door er mee te spelen en uiteindelijk een werkend voorbeeld inclusief tests te bouwen.<br />
 <br />
 Hieronder de handleiding om je op weg te helpen. Gebruik Google en ChatGPT als je er niet uitkomt.
+<br /> 
+Dit is bedoeld om richting te geven, het kan zijn dat commands niet volledig kloppen. Zelf blijven nadenken dus.
 <br />
 <br />
 
