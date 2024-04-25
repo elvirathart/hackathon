@@ -79,10 +79,11 @@ __docker pull postgres__
 Download de laatste versie van Postgres image.<br />
 In Docker Desktop, in de sidebar links: klik Images. Hier zie je de postgres image in de lijst verschijnen.<br />
 <br />
-__docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASWORD=pass123 postgres__
+__docker run -d --name pokemonContainer -p 5432:5432 -e POSTGRES_PASSWORD=pass123 postgres__
+
 <br />
 <br />
-<span style="color:blue;">
+<span style="color:blue;">– 
 __Uitleg command:__
 <br />
 “-d” flag specifies that the container should execute in the background.<br />
