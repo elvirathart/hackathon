@@ -141,7 +141,7 @@ display ( \d ) <br />
 tables ( \t ) <br />
 <br />
 <br />
-__INSERT INTO pokemon_types VALUES (0001, ‘bulbasaur’, ‘poison’);__
+__INSERT INTO pokemon_types (ID, NAME, TYPE) VALUES (0001, ‘bulbasaur’, ‘poison’);__
 <br />
 Insert records in de nieuwe tabel.<br />
 <br />
