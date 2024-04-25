@@ -19,9 +19,9 @@ __Spelen met containers en databases!__
 De opzet van deze hackathon is dit keer iets anders. Het is misschien iets minder hackathon, iets meer workshop. We leveren wat meer handleiding en tips erbij omdat misschien niet iedereen bekend is met het gebruik van containers en databases. Het is eigen keuze in hoeverre je dit wilt volgen.<br />
 De bedoeling is om kennis te maken met dit onderwerp, comfortabel worden in het gebruik en weten wat de voor en nadelen zijn – dit door er mee te spelen en uiteindelijk een werkend voorbeeld inclusief tests te bouwen.<br />
 <br />
-Hieronder de handleiding om je op weg te helpen. Gebruik Google en ChatGPT als je er niet uitkomt.
+Gebruik Google en ChatGPT als je er niet uitkomt.
 <br /> 
-Dit is bedoeld om richting te geven, het kan zijn dat commands niet volledig kloppen. Zelf blijven nadenken dus.
+Dit is bedoeld om je op weg te helpen. Letterlijk volgen hoeft niet, het kan zijn dat commands niet volledig kloppen. Zelf blijven nadenken dus.
 <br />
 Feedback is welkom.
 <br />
