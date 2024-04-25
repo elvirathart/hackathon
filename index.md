@@ -69,10 +69,6 @@ __docker --version__
 <br />
 Als je geen docker versie terugkrijgt, moet je waarschijnlijk de docker daemon starten. Zoek in de applicatie folder in Finder.<br />
 <br />
-__brew install postgresql@15__
-<br />
-Installeer PostgreSQL, bv met Homebrew.<br />
-<br />
 <span style="color:red;">Vanaf hier voor Linux en Mac:</span><br />
 __docker pull postgres__
 <br />
