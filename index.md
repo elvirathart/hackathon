@@ -144,6 +144,10 @@ tables ( \t ) <br />
 <br />
 __INSERT INTO pokemon_types (ID, NAME, TYPE) VALUES (0001, ‘bulbasaur’, ‘poison’);__
 <br />
+Dit command werkt ook zonder toevoeging van (ID, NAME, TYPE):
+<br />
+__INSERT INTO pokemon_types VALUES (0001, ‘bulbasaur’, ‘poison’);__
+<br />
 Insert records in de nieuwe tabel.<br />
 <br />
 __SELECT * FROM pokemon_types;__
