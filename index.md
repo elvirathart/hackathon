@@ -129,7 +129,7 @@ Maak connectie met de database. Let op dat je bevestiging krijgt dat je connecti
 Maakt een tabel aan met de gewenste kolommen.<br />
 __CREATE TABLE pokemon_types(ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, TYPE TEXT NOT NULL);__
 <br />
-Normaal zou je AUTO_INCREMENT gebruiken, zodat wanneer je een insert doet het ID automatisch wordt opgehoogd, zodat je geen ID hoeft mee te geven. Het nummer van de pokemon zou je dan apart mee moeten geven: <br />
+Normaal zou je variant van auto increment gebruiken voor de ID, zodat wanneer je een insert doet het ID automatisch wordt opgehoogd, zodat je geen ID hoeft mee te geven. Het nummer van de pokemon zou je dan apart mee moeten geven: <br />
 __CREATE TABLE pokemon_types(ID SERIAL PRIMARY KEY, NAME TEXT NOT NULL, TYPE TEXT NOT NULL);__
 <br />
 INSERT INTO pokemon_types VALUES ('bulbasaur', 'poison');
