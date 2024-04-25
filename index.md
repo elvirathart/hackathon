@@ -253,7 +253,7 @@ Maak een testfile aan genaamd preseed.test.ts. Maak contact met de preseeded ima
 <br />
 <br />
 
-## OPEN OPDRACHT - WANNEER JE KLAAR BENT MET TEST 1, 2, !! - Bouw een frontendje bij je databaseje
+## OPEN OPDRACHT - WANNEER JE KLAAR BENT MET TEST 1, 2 en 3 !! - Bouw een frontendje bij je databaseje
 
 <br />
 Maak een nodejs webserver waar pokemon list bv antwoord geeft op select*from pokemon_types. Stop dat antwoord in een html body, maak er mooi lijstje van. <br />
