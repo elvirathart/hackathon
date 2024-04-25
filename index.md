@@ -128,6 +128,12 @@ __\c pokemon;__
 Maak connectie met de database. Let op dat je bevestiging krijgt dat je connectie hebt met de database.<br />
 __CREATE TABLE pokemon_types(ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, TYPE TEXT NOT NULL);__
 <br />
+Normaal zou je AUTO_INCREMENT gebruiken, zodat wanneer je een insert doet het ID automatisch wordt opgehoogd, zodat je geen ID hoeft mee te geven. Het nummer van de pokemon zou je dan apart mee moeten geven: <br />
+__CREATE TABLE pokemon_types(ID INT AUTO_INCREMENT PRIMARY KEY, NAME TEXT NOT NULL, TYPE TEXT NOT NULL);__
+<br />
+INSERT INTO pokemon_types VALUES ('bulbasaur', 'poison');
+<br />
+<br />
 Maakt een tabel aan met de gewenste kolommen.<br />
 <br />
 __INSERT INTO pokemon_types VALUES (0001, ‘bulbasaur’, ‘poison’);__
