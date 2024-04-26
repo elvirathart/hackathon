@@ -6,7 +6,6 @@ output:
 ---
 
 ![SmartQA-logo alt >](./images/Logo_SmartQA.png)
-
 <br />
 
 # Hackathon - 25 april
