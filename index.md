@@ -20,7 +20,7 @@ De bedoeling is om kennis te maken met dit onderwerp, comfortabel worden in het 
 <br />
 Gebruik Google en ChatGPT als je er niet uitkomt.
 <br /> 
-Dit is bedoeld om je op weg te helpen. Letterlijk volgen hoeft niet, het kan zijn dat commands niet volledig kloppen. Zelf blijven nadenken dus.
+Dit is bedoeld om je op weg te helpen. Letterlijk volgen hoeft niet. Sowieso zelf blijven nadenken.
 <br />
 Feedback is welkom.
 <br />
